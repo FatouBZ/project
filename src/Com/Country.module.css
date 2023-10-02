@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+:root{
+    --DarkBlueElement: hsl(209, 23%, 22%);
+    --darkBg: hsl(207, 26%, 17%);
+    --LightModeText:  hsl(200, 15%, 8%)
+    --LightModeInput: hsl(0, 0%, 52%);
+    --lightBg: hsl(0, 0%, 98%);
+    --textAndElement: hsl(0, 0%, 100%)
+}
+
+
+.darkColor{
+    background-color:  hsl(207, 26%, 17%);
+    color:  hsl(0, 0%, 100%);
+    box-shadow: 0px 5px 5px hsl(209, 23%, 22%);
+}
+.lightColor{
+     background-color:  hsl(0, 0%, 100%);
+    color:  hsl(200, 15%, 8%);
+    box-shadow: 0px 2px 1px  rgb(227, 225, 225);
+
+}
+
+
+body{
+font-family: 'Nunito Sans', sans-serif;
+
+}
+.TopNavBar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    top: 0;
+
+}
+
+.switchMode{
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 5px transparent
+
+}
+.switchMode p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+        
+
+}
+
+.searchBox{
+    width: 350px;
+    padding: 15px 50px 15px 20px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+
+    
+
+}
+.searchBox > input{
+    margin-left: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0px 2px 1px  transparent;
+
+
+}
+
+.selectOption{
+    width: 208px;
+    padding: 10px 0px;
+    outline: none;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 100px;
+    
+}
+
+.Link{
+    text-decoration: none;
+    color: #000;
+}
+.grid{
+    margin: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+
+.Countries{
+    border-radius: 4px;
+    height: 400px;
+   
+}
+
+.Countries > img{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    
+}
+
+.CountryDetails{
+padding: 40px 20px;
+margin-top: -20px;
+}
+
+.CountryDetails h3{
+    margin-bottom: 20px;
+}
+
+.CountryDetails h4{
+    margin-bottom: 10px;
+}
+.CountryDetails h4 span{
+    font-weight: 300;
+}
+
+.singleCountry{
+    padding: 100px;
+    width: 100%;
+    height: 100%
+}
+
+.linkBox{
+    box-shadow: 0px 5px 5px transparent;
+
+}
+.backLink{
+    text-decoration: none;
+
+
+}
+
+.backLink i{
+    margin-right: 0px;
+}
+
+.CountriesDetails{
+    display: flex;
+    padding: 20px;
+}
+
+.CountriesDetails .imageSide > img{
+    width: 600px;
+    margin-right: 50px;
+}
+
+.details{
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details h2{
+    margin-bottom: 20px;
+}
+.details h4 {
+    margin-bottom: 8px;
+   
+}
+.details h4 > span {
+    font-weight: 100;
+}
+.border{
+    display: flex;
+    
+}
+.border ul{
+    display: flex;
+}
+.border > ul > li{
+    padding: 5px 20px;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.rightSide{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+@media (min-width: 375px){
+
+    .TopNavBar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+       margin-bottom: 0;
+    
+    }
+    .title{
+        font-size: 10px;
+    }
+   
+    
+    .switchMode p{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .grid{
+        display: grid;
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+    }
+    .search{
+       display: flex;
+       flex-direction: column;
+        padding: 20px 10px;
+        margin-top: 0px;
+       
+    }
+   
+    .selectOption{
+        width: 150px;
+        padding: 10px 10px;  
+        margin-top: 50px;  
+    }
+    .singleCountry{
+        padding: 100px 20px;
+        width: 100%;
+        height: 100%;
+    }
+.searchBox{
+    width: 350px;
+    margin-top: 70px;
+    
+}
+
+.CountriesDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.CountriesDetails .imageSide > img{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.details{
+    flex-direction: column; 
+     margin-left: 40px;
+     margin-bottom: 20px;
+}
+
+.details h2{
+    margin-bottom: 20px;
+    font-size:35px;
+}
+.details h4{
+    font-size: 20px;
+}
+.rightSide{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+}
+
+
+@media (min-width: 640px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+    }
+.searchBox{
+    width: 400px;
+    
+}
+.switchMode p{
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+
+.searchBox{
+
+    margin-top: 100px;
+
+    
+
+}
+.searchBox > input{
+    
+    background-color: transparent;
+    box-shadow: 0px 2px 1px  transparent;
+
+
+}
+
+.selectOption{
+    margin-top: 100px;
+    
+}
+
+
+.CountriesDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.CountriesDetails .imageSide > img{
+    width: 300px;
+    margin-left: 40px;
+}
+
+.details{
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.rightSide{
+    margin-top: 20px;
+}
+
+.details h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.details h4{
+    font-size: 15px;
+}
+}
+
+@media (min-width: 768px){
+    .grid{
+        margin: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+    }
+    .search{
+        padding: 0 20px;  
+    }
+    .mainContainer{
+        padding: 0 30px;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .selectOption{
+        width: 120px;
+        padding: 10px 10px;    
+    }
+    .singleCountry{
+        padding: 100px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+    }
+.searchBox{
+    width: 400px;
+    
+}
+
+.CountriesDetails{
+    display: flex;
+    flex-direction: row;
+}
+
+.CountriesDetails .imageSide > img{
+    width: 300px;
+    margin-left: 40px;
+}
+
+.details{
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.rightSide{
+    margin-top: 50px;
+}
+
+.details h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.details h4{
+    font-size: 10px;
+}
+}
+@media (min-width: 992px){
+
+.TopNavBar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    top: 0;
+}
+.TopNavBar h2{
+    font-size: 25px;
+}
+
+.switchMode p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+    .grid{
+        margin: 70px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 70px;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+         padding: 20px 10px;
+         margin-top: 0px;
+        
+     }
+
+    .selectOption{
+        width: 150px;
+        padding: 10px 10px;    
+    }
+    .singleCountry{
+        padding: 100px 20px;
+    }
+.searchBox{
+    width: 460px;
+    
+}
+
+.mainContainer{
+    padding: 0 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.singleCountry{
+    padding: 150px;
+    width: 950px;
+    height: 850px
+
+}
+
+.linkBox{
+    margin-bottom: 40px;
+}
+.backLink{
+    padding: 5px 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.backLink i{
+    margin-right: 10px;
+}
+.CountriesDetails{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.CountriesDetails .imageSide > img{
+    width: 500px;
+    margin-left: 40px;
+}
+
+.details{
+    padding: 20px 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.details div >  h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 100%;
+}
+.details h4{
+    font-size: 20px;
+}
+.rightSide{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+}
